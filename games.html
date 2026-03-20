@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games | Rago Tech Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Rago<span>Tech</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projecten</a></li>
+            <li><a href="games.html" class="active">Games</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="game-grid">
+            <div class="game-card" onclick="loadGame('snake')">
+                <h3>🐍 Snake</h3>
+                <p>Klassieke arcade fun.</p>
+                <button class="btn-primary">Speel Nu</button>
+            </div>
+            <div class="game-card" onclick="loadGame('clicker')">
+                <h3>⚡ Code Clicker</h3>
+                <p>Verzamel punten door te klikken.</p>
+                <button class="btn-primary">Speel Nu</button>
+            </div>
+        </section>
+
+        <!-- Dynamic Game Container -->
+        <section class="game-container glass" id="active-game">
+            <h2 id="game-title">Selecteer een game</h2>
+            <div id="game-area">
+                <!-- Canvas or Game goes here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-glass">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Rago Tech Hub</h3>
+                <p>Innovatieve oplossingen voor het moderne web en Roblox development.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Snelle Links</h3>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projecten</a>
+                <a href="games.html">Games</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>contact@ragotech.nl</p>
+                <div class="social-icons">
+                    <a href="https://github.com/rago-dakon"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Rago Tech Hub. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

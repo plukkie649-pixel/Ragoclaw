@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rago Tech Hub | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="progress-bar"></div>
+    
+    <nav class="navbar">
+        <div class="logo">Rago<span>Tech</span></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projecten</a></li>
+            <li><a href="games.html">Games</a></li>
+            <li><a href="#contact" class="btn-primary">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="hero glass">
+            <h1>Rago Tech Hub</h1>
+            <p id="typed-text"></p>
+        </section>
+
+        <section class="grid">
+            <div class="card glass" onclick="openModal('Roblox Framework')">
+                <h3>Roblox Framework</h3>
+                <p>Modulaire systemen voor Luau.</p>
+            </div>
+            <div class="card glass" onclick="openModal('Web Automation')">
+                <h3>Web Automation</h3>
+                <p>Tools voor efficiëntie.</p>
+            </div>
+        </section>
+
+        <section class="contact glass">
+            <h2>Laten we praten</h2>
+            <p>Klaar voor een nieuw project? Neem contact op.</p>
+        </section>
+    </main>
+
+    <div class="bottom-bar">
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="projects.html"><i class="fas fa-project-diagram"></i> Projecten</a>
+        <a href="https://github.com/rago-dakon"><i class="fab fa-github"></i> GitHub</a>
+        <a href="mailto:contact@example.com"><i class="fas fa-envelope"></i> Mail</a>
+    </div>
+
+    <div id="projectModal" class="modal">
+        <div class="modal-content glass">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Project</h2>
+            <p>Geavanceerde details komen hier.</p>
+        </div>
+    </div>
+
+    <footer class="footer-glass">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Rago Tech Hub</h3>
+                <p>Innovatieve oplossingen voor het moderne web en Roblox development.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Snelle Links</h3>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projecten</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>contact@ragotech.nl</p>
+                <div class="social-icons">
+                    <a href="https://github.com/rago-dakon"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Rago Tech Hub. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
